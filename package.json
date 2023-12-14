@@ -1,0 +1,58 @@
+{
+  "name": "stackoverflow-search",
+  "displayName": "StackOverflow Search",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "stackoverflow-search.searchStackOverflowByContextMenu",
+        "title": "Search on StackOverflow"
+      },
+      {
+        "command": "stackoverflow-search.searchStackOverflowByPalette",
+        "title": "Search on StackOverflow"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "when": "false",
+          "command": "stackoverflow-search.searchStackOverflowByContextMenu"
+        }
+      ],
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "stackoverflow-search.searchStackOverflowByContextMenu",
+          "group": "myGroup@1"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}
