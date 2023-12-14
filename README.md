@@ -18,7 +18,25 @@ Description: launched through the command palette and searches text inputted in 
 
 ## Commits Hitstory
 
-commit d2c8c44042af3b40a0a551e01fe0ef5d8863d8a7 (HEAD -> vscode-extension-task)
+commit e60d3d76ad67422d0fc365bd9755551dc77ca943 (HEAD -> vscode-extension-task)
+Author: bcsergey <buchnewserg@yandex.ru>
+Date:   Thu Dec 14 07:03:08 2023 +0300
+
+    fix: delete unimportant comments
+
+commit b3519426e74b1e5a5dbf3f21a7a95690c584d035
+Author: bcsergey <buchnewserg@yandex.ru>
+Date:   Thu Dec 14 06:21:21 2023 +0300
+
+    docs: fix documentation name
+
+commit 4fb500446516282a38230c5319c1880ef98799fa
+Author: bcsergey <buchnewserg@yandex.ru>
+Date:   Thu Dec 14 06:20:32 2023 +0300
+
+    docs: add project documentation
+
+commit d2c8c44042af3b40a0a551e01fe0ef5d8863d8a7
 Author: bcsergey <buchnewserg@yandex.ru>
 Date:   Thu Dec 14 05:53:08 2023 +0300
 
