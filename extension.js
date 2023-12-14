@@ -24,7 +24,7 @@ async function activate(context) {
     let searchByPalette = vscode.commands.registerCommand('stackoverflow-search.searchStackOverflowByPalette',
 	async function () {
         let searchQuery = await vscode.window.showInputBox({
-            placeHolder: "Search query",
+            placeHolder: "Search",
             prompt: "Search on StackOverlflow",
         });
 
