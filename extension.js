@@ -33,8 +33,6 @@ async function activate(context) {
                 vscode.window.showErrorMessage('You need to input some text');
             } else {
                 searchQuery = encodeURIComponent(searchQuery);
-                //searchQuery.replaceAll(/\s/g, '+');
-                //const tags = vscode.window.activeTextEditor?.document.languageId;
                 vscode.env.openExternal("https://stackoverflow.com/search?q=" + searchQuery);
             }
         }
