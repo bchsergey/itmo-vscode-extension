@@ -1,4 +1,4 @@
-# StackOverflow extension README
+# StackOverflow Search extension README
 
 This is the README for extension "stackoverflow-search" which helps to searh request on https://stackoverflow.com via VS Code.
 
